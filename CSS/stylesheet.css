@@ -1,0 +1,122 @@
+.wrapper{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.875em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 996px;
+    margin: 0px auto;
+    height: 203px;
+}
+header{
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    display: block;
+    background-color: khaki;
+}
+.logo_container{
+    width: 348px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+.head_cont_right{
+    width: 626px;
+    height: auto;
+    margin: 0px;
+    padding: 33px 0 0 0;
+    display: inline-block;
+}
+.head_cont_right_top{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+.head_cont_right_bottom{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+.Top_search1{
+    width: 358px;
+    height:auto; 
+    margin:0 0 0 0; 
+    padding:0 0 0 0; 
+    line-height:35px; 
+    text-align:right;
+    display: inline-block;
+}
+.Top_search2{
+    width: 242px;
+    height:35px; 
+    margin:0 0 0 25px; 
+    padding:0 0 0 0;  
+    float: right;
+}
+.Top_search2 input{
+    width:210px; 
+    height:35px; 
+    line-height:35px; 
+    margin:0 0 0 0; 
+    padding:0 30px 0 10px; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;  
+    background-position:220px 10px; 
+    background-repeat:no-repeat;
+}
+
+#topMenu{ float: right; margin-top: 10px;margin-right: 35px;}
+#topMenu ul li { float:left; display:inline;}
+#topMenu ul li a{ font-size:14px; color:#83867b; font-family: 'roboto_slablight'; text-decoration:none;padding: 0 15px; font-weight:bold;}
+#topMenu ul li:last-child a{padding-right: 0px;}
+#topMenu ul li a.active,#topMenu ul li a:hover{ color:green;}
+.container1{
+    width: 100%;
+    height: 203px;
+    margin-top: 203px;
+    background-image: url("../images/background.jfif");
+    text-align: center;
+    color: white;
+}
+h2{
+    padding-top: 100px;    
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+}
+.manage_buttons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.manage_buttons li{
+    display: inline-block;
+    background-color: green;
+}
+.pagination_listing{
+    display: flex;
+    margin-left: -38px;
+    
+}
+.pagination_listing li{
+    display: inline-block;
+    background-color: black;
+    width: 40px;
+}
+
+
