@@ -48,6 +48,10 @@ h1{
     width: 100px;
     font-weight: bold;
 }
+.btn:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: scale(1.5,1.5);
+}
 input{
     height: 50px;
 }
