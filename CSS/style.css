@@ -1,3 +1,7 @@
+header{
+    position:sticky;
+    top: 0px;
+}
 nav{
     display: flex;
     height: 48px;
@@ -5,8 +9,7 @@ nav{
     justify-content: flex-start;
     background-color: orange;
     width: 100%;
-    position:sticky;
-    top: 0%;
+
 }
 
 #div1 a{
