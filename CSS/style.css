@@ -32,6 +32,7 @@ nav a:hover{
 }
 form{
     text-align: center;
+    margin-top: 32px;
 }
 input{
     width: 250px;
