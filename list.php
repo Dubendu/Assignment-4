@@ -27,6 +27,7 @@
         </nav>
     </header>
     <br>
+    <br>
     <div class="container">
     <div>
       <form action="index.html" method='POST' class="create-category-form">
