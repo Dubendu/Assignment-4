@@ -24,7 +24,6 @@ else if(isset($_POST["submit"])){
     if(isset($_POST ["c_name"])){
         //get the ID of the record to modify in the database
         $ID = $_GET ["toedit"];
-        echo $ID;
         /*
 mysqli_real_escape_string is for security purposes. It is used for escaping special characters inserted by the user which can sometimes be harmful to our database 
 */ 
