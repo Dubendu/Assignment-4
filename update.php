@@ -79,7 +79,7 @@ else{
             <div class="input-group">
                 <input class="form-input" type="text" name="c_name">
             </div><br>
-               <button name="submit">submit</button>
+               <button name="submit">Save Changes</button>
                <a href="index.html"><button>Go Back</button></a>
         </div>
     </form>
