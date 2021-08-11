@@ -29,12 +29,16 @@ form{
 input{
     width: 250px;
 }
+img{
+    height: 48px;
+    width: 28px;
+}
 
 footer{
     background-color: orange;
     bottom: 0px;
     display: block;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     text-align: center;
 }
