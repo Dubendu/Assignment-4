@@ -28,7 +28,7 @@
     </header>
     <br>
     <br>
-    <div class="container">
+    <div class="container" style="margin-top:32px;">
     <div>
       <form action="index.html" method='POST' class="create-category-form">
         <button id="create-category-btn">Create Category</button>
