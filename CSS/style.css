@@ -46,7 +46,8 @@ h1{
     color: white;
     height: 50px;
     width: 100px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 footer{
