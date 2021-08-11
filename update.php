@@ -49,6 +49,7 @@ else{
 <body>
     <header>
         <nav>
+            <img src="images/logo.png">
             <div id="div1">
             <a href="home">Home</a>
             <a href="menu">Menu</a>
@@ -70,8 +71,8 @@ else{
             <div class="input-group">
                 <input class="form-input" type="text" name="c_name">
             </div><br>
-               <button name="submit">Save Changes</button>
-               <button type="submit" formaction="index.html">Go Back</button>
+               <button name="submit" id="save-change-btn" class="update-btn">Save Changes</button>
+               <button type="submit" formaction="index.html" id="go-back-btn" class="update-btn">Go Back</button>
         </div>
     </form>
     <footer>
@@ -109,7 +110,7 @@ else{
             </div>
         </div>
         <div class="social-links">
-            <label for="subscribe">Sign Up for QuickDeal Emails:</label><input type="text" name="subscribe" id="searchbar" placeholder="Email">
+            <label for="subscribe">Sign Up for QuickDeal Emails:</label><input type="text" name="subscribe" id="subscribe" placeholder="Email">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
