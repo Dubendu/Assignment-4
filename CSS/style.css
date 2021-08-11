@@ -39,10 +39,13 @@ h1{
     display: inline-block;
     background-color: yellowgreen;
     color: white;
+    width: 250px;
 }
 .btn{
     background-color: green;
     color: white;
+    height: 60px;
+    width: 100px;
 }
 
 footer{
