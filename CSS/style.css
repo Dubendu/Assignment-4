@@ -58,8 +58,6 @@ input{
 
 footer{
     background-color: orange;
-    bottom: 0;
-    position: sticky;
     width: 100%;
     text-align: center;
     margin-bottom: 0px;
