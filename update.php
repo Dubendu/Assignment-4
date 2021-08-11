@@ -80,7 +80,7 @@ else{
                 <input class="form-input" type="text" name="c_name">
             </div><br>
                <button name="submit">submit</button>
-               <a href="index.html"><button>Go Back</button></a>
+               <?php echo '<a href="index.php"><button>Go Back</button></a>';?>
         </div>
     </form>
     <footer>
