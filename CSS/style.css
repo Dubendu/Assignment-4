@@ -76,7 +76,7 @@ input{
 .update-btn{
     height: 40px;
     font-weight: bold;
-    width: 70px;
+    width: 100px;
 }
 .update-btn:hover{
     box-shadow: 5px 5px 10px grey;
