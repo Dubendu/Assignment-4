@@ -78,16 +78,11 @@ else{
     </header>
     <br>
     <br>
-    <form method='POST' action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>">
+    <form method='POST' action="<?php echo $_SERVER['PHP_SELF']."?toedit=$category_id";?>">
         <div class="container">
             <h1>Edit Category</h1>
             <div class="input-group">
-            <?php 
-        $form_fields = <<<START
-        <p><input type="text" name="c_name"></p>
-START;
-echo $form_fields;
-?>
+                <input class="form-input" type="text" name="c_name">
             </div><br>
                <button name="submit">submit</button>
                <a href="index.html"><button>Go Back</button></a>
