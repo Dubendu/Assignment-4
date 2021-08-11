@@ -87,6 +87,7 @@ else{
         <p>Copyright &copy; 2021 Dubendu Singh</p>
         <a href="#">singhdubendu222@gmail.com</a>
     </footer>
+    <script src="validation.js"></script>
 </body>
 
 </html>
