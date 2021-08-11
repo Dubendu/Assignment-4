@@ -80,7 +80,7 @@ else{
                 <input class="form-input" type="text" name="c_name">
             </div><br>
                <button name="submit">Save Changes</button>
-               <button type="submit" formaction="index.html"></button>
+               <button type="submit" formaction="index.html">Go Back</button>
         </div>
     </form>
     <footer>
