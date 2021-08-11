@@ -51,7 +51,7 @@ h1{
     background-color: green;
     color: white;
     height: 40px;
-    width: 140px;
+    width: 100px;
     font-weight: bold;
 }
 .btn:hover{
@@ -76,7 +76,7 @@ input{
 .update-btn{
     height: 40px;
     font-weight: bold;
-    width: 100px;
+    width: 140px;
 }
 .update-btn:hover{
     box-shadow: 5px 5px 10px grey;
