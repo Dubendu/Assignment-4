@@ -27,7 +27,7 @@ else if(isset($_POST["submit"])){
         $c_name = $_POST ["c_name"];
 
 //Inserting the submitted data into the database
-$sql = "UPDATE `category_details` SET `category_name` = $c_name WHERE `category_id` = $ID ";
+$sql = "UPDATE category_details SET category_name = '$c_name' WHERE category_id = $ID ";
 
 if(mysqli_query($conn,$sql)){
     header("Location:list.php");
