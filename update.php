@@ -31,7 +31,7 @@ mysqli_real_escape_string is for security purposes. It is used for escaping spec
 $c_name = mysqli_real_escape_string ($conn , $_POST ["c_name"]) ;
 
 //Inserting the submitted data into the database
-$sql = "UPDATE category_details SET category_name = '$c_name' WHERE category_id = '$ID' ";
+$sql = "UPDATE `category_details` SET `category_name` = $c_name WHERE `category_id` = '$ID' ";
 
 if(mysqli_query($conn,$sql)){
     header("Location:list.php");
