@@ -31,12 +31,8 @@ input{
 }
 
 footer{
-    background-color: orange;
-    bottom: 0px;
-    display: block;
-    width: 100vw;
-    position: absolute;
-    text-align: center;
+    background-color: yellow;
+   
 }
 footer a{
     text-decoration: none;
