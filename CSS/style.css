@@ -56,8 +56,8 @@ input{
     height: 40px;
 }
 .container{
-    overflow: auto;
-    padding-bottom: 100px;
+    overflow:auto;
+    padding-bottom: 300px;
 }
 footer{
     background-color: orange;
