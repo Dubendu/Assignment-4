@@ -5,6 +5,7 @@ nav{
     justify-content: flex-start;
     background-color: orange;
     width: 100%;
+    position:sticky;
 }
 
 #div1 a{
