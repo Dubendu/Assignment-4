@@ -78,14 +78,13 @@ else{
     </header>
     <br>
     <br>
-    <!-- we add .php file in action because files in same directory -->
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>">
         <div class="container">
             <h1>Edit Category</h1>
             <div class="input-group">
-                <input class="form-input" type="text" name="c_name" value>
+                <input class="form-input" type="text" name="c_name">
             </div><br>
-               <button class="btn" align="right" type="submit">submit</button>
+               <button name="submit">submit</button>
                <a href="index.html"><button>Go Back</button></a>
         </div>
     </form>
