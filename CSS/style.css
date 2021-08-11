@@ -2,7 +2,7 @@ nav{
     display: flex;
     height: 48px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: orange;
     width: 100%;
 }
@@ -23,6 +23,7 @@ nav a:hover{
 }
 #div2{
     margin-right: 32px;
+    justify-content: flex-end;
 }
 form{
     text-align: center;
