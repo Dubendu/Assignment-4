@@ -82,7 +82,7 @@ else{
         <div class="container">
             <h1>Edit Category</h1>
             <div class="input-group">
-                <input class="form-input" type="text" name="c_name">
+                <input class="form-input" type="text" name="c_name" value="$c_name">
             </div><br>
                <button name="submit">submit</button>
                <a href="index.html"><button>Go Back</button></a>
