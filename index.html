@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Category</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="add category">
+    <meta name="Keywords" content="add,categories">
+    <meta name="author" content="Dubendu">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="div1">
+            <a href="home">Home</a>
+            <a href="menu">Menu</a>
+            <a href="about">About Us</a>
+            <a href="contact">Contact</a>
+            <a href="login">Login</a>
+            <a href="register">Register</a>
+            </div>
+            <div id="div2">
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <!-- we add .php file in action because files in same directory -->
+    <form method="post" action="category.php">
+        <div class="container">
+            <h1>Add Category</h1>
+            <div class="input-group">
+                <input class="form-input" type="text" name="c_name" placeholder="category name">
+            </div><br>
+               <a href="list.php"><button class="btn" align="right" type="submit">submit</button></a> 
+        </div>
+    </form>
+    <footer>
+        <p>Copyright &copy; 2021 Dubendu Singh</p>
+        <a href="#">singhdubendu222@gmail.com</a>
+    </footer>
+</body>
+
+</html>
