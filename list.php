@@ -27,6 +27,7 @@
         </nav>
     </header>
     <br>
+    <div class="container">
     <div>
       <form action="index.html" method='POST' class="create-category-form">
         <button id="create-category-btn">Create Category</button>
@@ -60,6 +61,7 @@
       $result = mysqli_query($conn, $sql);
     }
 ?>
+</div>
 </div>
     <footer>
     <div class="grid-container">
