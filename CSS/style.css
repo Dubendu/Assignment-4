@@ -44,10 +44,12 @@ h1{
 .btn{
     background-color: green;
     color: white;
-    height: 50px;
+    height: 40px;
     width: 100px;
-    font-size: 20px;
     font-weight: bold;
+}
+input{
+    height: 50px;
 }
 
 footer{
