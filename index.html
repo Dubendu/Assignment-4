@@ -27,11 +27,12 @@
     <br>
     <br>
     <!-- we add .php file in action because files in same directory -->
-    <form method="post" action="category.php">
+    <form method="post" action="category.php" onsubmit="return validateform()">
         <div class="container">
             <h1>Add Category</h1>
             <div class="input-group">
-                <input class="form-input" type="text" name="c_name" placeholder="category name">
+                <input class="form-input" type="text" name="c_name" placeholder="category name" id="category_name" onblur="validate()">
+                <span id="error"></span>
             </div><br>
                <a href="list.php"><button class="btn" align="right" type="submit">submit</button></a> 
         </div>
@@ -40,6 +41,7 @@
         <p>Copyright &copy; 2021 Dubendu Singh</p>
         <a href="#">singhdubendu222@gmail.com</a>
     </footer>
+    <script src="validation.js"></script>
 </body>
 
 </html>
