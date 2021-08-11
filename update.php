@@ -24,11 +24,7 @@ else if(isset($_POST["submit"])){
     if(isset($_POST ["c_name"])){
         //get the ID of the record to modify in the database
         $ID = $_GET ["toedit"];
-        /*
-mysqli_real_escape_string is for security purposes. It is used for escaping special characters inserted by the user which can sometimes be harmful to our database 
-*/ 
- 
-$c_name = mysqli_real_escape_string ($conn , $_POST ["c_name"]) ;
+        $c_name = $_POST ["c_name"];
 
 //Inserting the submitted data into the database
 $sql = "UPDATE `category_details` SET `category_name` = $c_name WHERE `category_id` = '$ID' ";
