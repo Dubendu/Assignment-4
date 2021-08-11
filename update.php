@@ -78,7 +78,7 @@ else{
     </header>
     <br>
     <br>
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>">
+    <form method='POST' action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>">
         <div class="container">
             <h1>Edit Category</h1>
             <div class="input-group">
