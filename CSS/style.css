@@ -40,6 +40,10 @@ h1{
     background-color: yellowgreen;
     color: white;
 }
+.btn{
+    background-color: green;
+    color: white;
+}
 
 footer{
     background-color: orange;
