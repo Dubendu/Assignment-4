@@ -1,9 +1,5 @@
+<?php include('config.php')?>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "category";
-$conn = new mysqli($servername, $username, $password,$dbname);
 //checking if the user has clicked the edit button
 if(isset($_GET["edit"])){
     $ID = $_GET["edit"];
@@ -46,8 +42,9 @@ else{
     <meta name="Keywords" content="add,categories">
     <meta name="author" content="Dubendu">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Category</title>
+    <title>Update Category</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -78,8 +75,55 @@ else{
         </div>
     </form>
     <footer>
-        <p>Copyright &copy; 2021 Dubendu Singh</p>
-        <a href="#">singhdubendu222@gmail.com</a>
+    <div class="grid-container">
+            <div class="grid-item">
+                <h3>Site Links</h3>
+                <ul>
+                    <li>About QuickDeal</li>
+                    <li>Careers</li>
+                    <li>QuickDeal Global Sites</li>
+                    <li>Sitemap</li>
+                    <li>Affiliates</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>My QuickDeal</h3>
+                <ul>
+                    <li>My Account</li>
+                    <li>Order Status</li>
+                    <li>My Vouchers</li>
+                    <li>Offers</li>
+                    <li>Rewards</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Help & FAQs</h3>
+                <ul>
+                    <li>Online Ordering</li>
+                    <li>Shipping</li>
+                    <li>Billing</li>
+                    <li>Returns & Exchanges</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <label for="subscribe">Sign Up for QuickDeal Emails:</label><input type="text" name="subscribe" id="searchbar" placeholder="Email">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+            <a href="#" class="fa fa-skype"></a>
+        </div>
+        <div>
+            <p>Copyright &copy; 2021 Dubendu Singh</p>
+            <a href="#">singhdubendu222@gmail.com</a>
+        </div>
     </footer>
     <script src="validation.js"></script>
 </body>
