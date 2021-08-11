@@ -35,6 +35,11 @@ img{
     height: 48px;
     width: 100px;
 }
+h1{
+    display: inline-block;
+    background-color: yellowgreen;
+    color: white;
+}
 
 footer{
     background-color: orange;
