@@ -53,9 +53,12 @@ h1{
     transform: scale(1.5,1.5);
 }
 input{
-    height: 50px;
+    height: 40px;
 }
-
+.container{
+    overflow: auto;
+    padding-bottom: 100px;
+}
 footer{
     background-color: orange;
     width: 100%;
