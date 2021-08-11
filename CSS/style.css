@@ -23,7 +23,7 @@ nav a:hover{
 }
 #div2{
     margin-right: 32px;
-    justify-content: flex-end;
+    margin-left: 32px;
 }
 form{
     text-align: center;
