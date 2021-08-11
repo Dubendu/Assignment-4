@@ -62,6 +62,7 @@ footer{
     position: relative;
     width: 100%;
     text-align: center;
+    margin-bottom: 0px;
 }
 footer a{
     text-decoration: none;
