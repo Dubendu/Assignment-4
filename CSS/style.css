@@ -31,8 +31,12 @@ input{
 }
 
 footer{
-    background-color: yellow;
-   
+    background-color: orange;
+    bottom: 0px;
+    display: block;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
 }
 footer a{
     text-decoration: none;
@@ -62,11 +66,5 @@ footer a{
     text-align: center;
     margin-left: 200px;
     margin-right: 150px;
-}
-.grid-container{
-    display: grid;
-    grid-column-gap: 50px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
 }
 
