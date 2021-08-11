@@ -65,6 +65,8 @@ footer{
     text-align: center;
     position: fixed;
     bottom: 0px;
+    overflow: auto;
+    padding-top: 200px;
 }
 footer a{
     text-decoration: none;
