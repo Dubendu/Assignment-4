@@ -1,12 +1,8 @@
 <?php
-// server connection
 $servername = "localhost";
 $username = "root";
-// their is no password in default
 $password = "";
-// our database name
 $dbname = "category";
-  // lets check its connected
 $conn = new mysqli($servername, $username, $password,$dbname);
 //checking if the user has clicked the edit button
 if(isset($_GET["edit"])){
@@ -26,7 +22,6 @@ else if(isset($_POST["submit"])){
         $ID = $_GET ["toedit"];
         $c_name = $_POST ["c_name"];
 
-//Inserting the submitted data into the database
 $sql = "UPDATE category_details SET category_name = '$c_name' WHERE category_id = $ID ";
 
 if(mysqli_query($conn,$sql)){
@@ -38,7 +33,6 @@ else{
     $msg = "oops! There is an error when editing your record. Retry again" . mysqli_error($conn);
     }
 }
-//If the user did not click the edit link in index.php or the submit button in edit.php and tries to access this page, redirect the user back to index.php_ini_loaded_file
 else{
     header("Location:list.php");
     exit();
