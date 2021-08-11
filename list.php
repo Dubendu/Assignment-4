@@ -13,6 +13,7 @@
 <body>
     <header>
         <nav>
+            <img src="images/logo.png">
             <div id="div1">
             <a href="home">Home</a>
             <a href="menu">Menu</a>
@@ -99,7 +100,7 @@
             </div>
         </div>
         <div class="social-links">
-            <label for="subscribe">Sign Up for QuickDeal Emails:</label><input type="text" name="subscribe" id="searchbar" placeholder="Email">
+            <label for="subscribe">Sign Up for QuickDeal Emails:</label><input type="text" name="subscribe" id="subscribe" placeholder="Email">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
