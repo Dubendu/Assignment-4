@@ -79,7 +79,7 @@ function validate5(){
         return true;
 }
 
-function validateform(){
+function validateForm(){
     let st2=validate2();
     let st3=validate3();
     let st4=validate4();
