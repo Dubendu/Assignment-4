@@ -1,4 +1,3 @@
-
 let productNode=document.getElementById("product_name");
 let errNode2=document.getElementById("errorPname");
 function validate2(){
