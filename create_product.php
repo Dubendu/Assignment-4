@@ -28,6 +28,8 @@ else{
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="CSS/product_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="product_validation.js"></script>
 </head>
 <body>
     <header>
@@ -128,8 +130,6 @@ else{
             <a href="#">singhdubendu222@gmail.com</a>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="product_validation.js"></script>
 </body>
 
 </html>
