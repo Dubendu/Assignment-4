@@ -89,7 +89,7 @@ else{
                     <option value="Earphones">Earphones</option>
                 </select>   
                <div>               
-                   <button name="submit" id="save-change-btn" class="update-btn">Save Changes</button>
+                   <button type="submit" name="submit" id="save-change-btn" class="update-btn">Save Changes</button>
                     <button type="submit" formaction="create_product.php" id="go-back-btn" class="update-btn">Go Back</button>
                 </div>
             </div>
