@@ -69,7 +69,7 @@ else{
         </nav>
     </header>
     <br>
-    <form method='POST' class="create_product_form" action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>" onsubmit="return validateform()">
+    <form method='POST' id="regForm" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>" onsubmit="return validateform()">
         <div class="container">
             <h1>Edit Category</h1>
             <div class="input-group">
@@ -147,6 +147,7 @@ else{
         </div>
     </footer>
     <script src="product_validation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>
