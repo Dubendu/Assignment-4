@@ -74,7 +74,7 @@ function validate3(){
 
 function validate4(){
     let image=productImage.val();
-    let regexpress_image=new RegExp("([^\\s]+(\\.(?i)(jpe?g|png|jfif))$)");
+    let regexpress_image=new RegExp("([^\\s]+(\\.(?i)(jpg|png|jfif|jpeg))$");
     if(!regexpress_price.test(image)){
         errNode4.html("<b>Image should be in jpg,jpeg,png,jfif format only.</b>");
         productImage.css({border:'2px solid red',backgroundColor:'pink'});
