@@ -1,6 +1,6 @@
 <?php include('config.php')?>
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+if (isset($_POST['submit'])){
     $product_name=$_POST['p_name'];
     $product_price=$_POST['p_price'];
     $product_category=$_POST['category'];
@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $target_db="images/".$product_image;
     move_uploaded_file($_FILES["p_image"]["tmp_name"],$target);
     $sql="insert into product_details(product_id,product_name,product_image,product_price,product_category) values('','".$product_name."','".$target_db."','".$product_price."','".$product_category."')";
-if ($conn->query($sql)===TRUE){
+if ($conn->query($sql)===TRUE && validateform()){
     header("Location:list_products.php");
     exit();
 }
