@@ -7,14 +7,14 @@ let errNode4;
 let productCategory;
 let errNode5;
 $(function(){
-    productNode=$("#name");
-    errNode2=$("#err1");
-    productPrice=$("#age");
-    errNode3=$("#err2");
-    productImage=$("#email");
-    errNode4=$("#errMail");
-    productCategory=$("#pass");
-    errNode5=$("#errPassword");
+    productNode=$("#product_name");
+    errNode2=$("#errorPname");
+    productPrice=$("#product_price");
+    errNode3=$("#errorPrice");
+    productImage=$("#upload_image");
+    errNode4=$("#errorImage");
+    productCategory=$("#select_category");
+    errNode5=$("#errorCategory");
     formNode=$('#regForm');
     productNode.blur(function(){
         validate2();
