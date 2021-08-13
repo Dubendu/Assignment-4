@@ -84,6 +84,7 @@ else{
                 <span id="errorImage"></span>
                 <label for="select_category">Select Category</label>
                 <select name="category" id="select_category" class="form-input">
+                    <option style="display:none" selected="selected" value=""> </option>
                     <option value="Mobile">Mobile</option>
                     <option value="Automobile">Automobile</option>
                     <option value="Book">Books</option>
