@@ -10,7 +10,6 @@ if (isset($_POST['submit'])){
     move_uploaded_file($_FILES["p_image"]["tmp_name"],$target);
     $sql="insert into product_details(product_id,product_name,product_image,product_price,product_category) values('','".$product_name."','".$target_db."','".$product_price."','".$product_category."')";
 if ($conn->query($sql)===TRUE){
-    echo '<script>validateform();</script>';
     header("Location:list_products.php");
     exit();
 }
@@ -29,6 +28,7 @@ else{
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="CSS/product_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">validateform();</script>
 </head>
 <body>
     <header>
