@@ -20,9 +20,11 @@ else if(isset($_POST["submit"])){
         $product_price=$_POST['p_price'];
         $product_category=$_POST['category'];
         $product_image=$_POST['p_image'];
-       // $target="images/".$product_image;
+        $target="./images/".$product_image;
+        $target_db="images/".$product_image;
+        move_uploaded_file($_FILES["p_image"]["tmp_name"],$target);
 
-$sql = "UPDATE product_details SET product_name = '$product_name',product_image='$product_image',product_price='$product_price',product_category='$product_category' WHERE product_id = $ID ";
+$sql = "UPDATE product_details SET product_name = '$product_name',product_image='$target_db',product_price='$product_price',product_category='$product_category' WHERE product_id = $ID ";
 
 if(mysqli_query($conn,$sql)){
     header("Location:list_products.php");
