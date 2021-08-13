@@ -1,78 +1,97 @@
-let productNode=document.getElementById("product_name");
-let errNode2=document.getElementById("errorPname");
+let productNode;
+let errNode2;
+let productPrice;
+let errNode3;
+let productImage;
+let errNode4;
+let productCategory;
+let errNode5;
+$(function(){
+    productNode=$("#name");
+    errNode2=$("#err1");
+    productPrice=$("#age");
+    errNode3=$("#err2");
+    productImage=$("#email");
+    errNode4=$("#errMail");
+    productCategory=$("#pass");
+    errNode5=$("#errPassword");
+    formNode=$('#regForm');
+    productNode.blur(function(){
+        validate2();
+    });
+    productPrice.blur(function(){
+        validate3();
+    });
+    productImage.blur(function(){
+        validate4();
+    });
+    productCategory.blur(function(){
+        validate5();
+    });
+    formNode.submit(()=>validateForm());
+});
+
 function validate2(){
-    errNode2.innerHTML="";
-    productNode.style.backgroundColor="yellow";
-    productNode.style.border="2px solid green";
-    let pname=productNode.value;
+    errNode2.innerHTML(" ");
+    productNode.css({border:'2px solid green',backgroundColor:'yellow'});
+    let pname=productNode.val();
     let regexpress_pname=new RegExp("[a-zA-Z0-9]+");
     if (pname===""){
-        errNode2.innerHTML="<b>this field is required.<b>";
-        productNode.style.border="2px solid red";
-        productNode.style.backgroundColor="pink";
+        errNode2.html("<b>this field is required.<b>");
+        productNode.css({border:'2px solid red',backgroundColor:'pink'});
         return false;
     }
     else if(!regexpress_pname.test(pname)){
-        errNode2.innerHTML="<b>Name should be only alphanumerics.</b>"
-        productNode.style.border="2px solid red";
-        productNode.style.backgroundColor="pink";
+        errNode2.html("<b>Name should be only alphanumerics.</b>");
+        productNode.css({border:'2px solid red',backgroundColor:'pink'});
         return false;
     }
     else
         return true;
 }
 
-let productPrice=document.getElementById("product_price");
-let errNode3=document.getElementById("errorPrice");
+
 function validate3(){
-    errNode3.innerHTML="";
-    productPrice.style.backgroundColor="yellow";
-    productPrice.style.border="2px solid green";
+    errNode3.html("");
+    productPrice.css({border:'2px solid green',backgroundColor:'yellow'});
     let price=productPrice.value;
     let regexpress_price=new RegExp("[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)");
     if (price===""){
-        errNode3.innerHTML="<b>this field is required.<b>";
-        productPrice.style.border="2px solid red";
-        productPrice.style.backgroundColor="pink";
+        errNode3.html("<b>this field is required.<b>");
+        productPrice.css({border:'2px solid red',backgroundColor:'pink'});
         return false;
     }
     else if(!regexpress_price.test(price)){
-        errNode3.innerHTML="<b>Product price should be in decimal.</b>"
-        productPrice.style.border="2px solid red";
-        productPrice.style.backgroundColor="pink";
+        errNode3.html("<b>Product price should be in decimal.</b>");
+        productPrice.css({border:'2px solid red',backgroundColor:'pink'});
         return false;
     }
     else
         return true;
 }
 
-let productImage=document.getElementById("upload_image");
-let errNode4=document.getElementById("errorPname");
+
 function validate4(){
     let image=productImage.value;
     let regexpress_image=new RegExp("([^\\s]+(\\.(?i)(jpe?g|png|jfif))$)");
     if(!regexpress_price.test(image)){
-        errNode4.innerHTML="<b>Image should be in jpg,jpeg,png,jfif format only.</b>"
-        productImage.style.border="2px solid red";
-        productImage.style.backgroundColor="pink";
+        errNode4.html("<b>Image should be in jpg,jpeg,png,jfif format only.</b>");
+        productImage.css({border:'2px solid red',backgroundColor:'pink'});
         return false;
     }
     else
         return true;
 }
 
-let productCategory=document.getElementById("select_category");
-let errNode5=document.getElementById("errorCategory");
+
 
 function validate5(){
-    errNode5.innerHTML="";
-    productCategory.style.backgroundColor="yellow";
-    productCategory.style.border="2px solid green";
+    errNode5.html("");
+    productCategory.css({border:'2px solid green',backgroundColor:'yellow'});
     let category=productCategory.value;
     if (category===""){
-        errNode5.innerHTML="<b>this field is required.<b>";
-        productCategory.style.border="2px solid red";
-        productCategory.style.backgroundColor="pink";
+        errNode5.html("<b>this field is required.<b>");
+        productCategory.css({border:'2px solid red',backgroundColor:'pink'});
         return false;
     }
     else
