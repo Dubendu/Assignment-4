@@ -69,7 +69,7 @@ else{
         </nav>
     </header>
     <br>
-    <form method='POST' id="regForm" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>" onsubmit="return validateform()">
+    <form method='POST' id="regForm" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF']."?toedit=$ID";?>" >
         <div class="container">
             <h1>Edit Category</h1>
             <div class="input-group">
