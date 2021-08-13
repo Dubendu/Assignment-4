@@ -6,7 +6,7 @@ let productImage;
 let errNode4;
 let productCategory;
 let errNode5;
-let formNode
+let formNode;
 $(function(){
     productNode=$("#product_name");
     errNode2=$("#errorPname");
