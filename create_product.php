@@ -47,7 +47,7 @@ else{
         </nav>
     </header>
     <br>
-    <form method="post" id="regForm" onsubmit="return validateForm()" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data" >
+    <form method="post" id="regForm" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data" >
         <div class="container">
             <h1>Add Product</h1>
             <div class="input-group">
