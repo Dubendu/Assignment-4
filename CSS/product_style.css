@@ -1,0 +1,242 @@
+header{
+    position:sticky;
+    top: 0px;
+}
+nav{
+    display: flex;
+    height: 48px;
+    align-items: center;
+    background-color: orange;
+    width: 100%;
+
+}
+
+#div1 a{
+    text-decoration: none;
+    padding: 10px;
+    color:black;
+    margin-left: 4px;
+    
+}
+nav a:hover{
+    background-color: white;
+}
+#div1{
+    margin-left: 20px;
+   
+}
+#div2{
+    margin-right: 32px;
+    margin-left: 500px;
+}
+.create_product_form{
+    text-align: center;
+    margin-top: 22px;
+    padding-bottom: 50px;
+    border: 1px solid gainsboro;
+    width: 896px;
+    height: 500px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+}
+input{
+    width: 250px;
+}
+.form-input{
+    margin-bottom: 20px;
+}
+img{
+    height: 48px;
+    width: 100px;
+}
+h1{
+    display: inline-block;
+    background-color: yellowgreen;
+    color: white;
+    width: 350px;
+}
+.btn{
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+}
+.btn:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: scale(1.5,1.5);
+}
+#reset_btn{
+    background-color: gray;
+}
+.reset_btn:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: scale(1.5,1.5);
+}
+input{
+    height: 40px;
+    width: 350px;
+    border: 1px solid black;
+    
+}
+.input-group label{
+    display: block;
+    margin-bottom: 12px;
+}
+.input-group{
+    margin-bottom: 25px;
+    text-align: start;
+    margin-left: 273px;
+}
+.container{
+    overflow:auto;
+}
+#select_category{
+    width: 350px;
+    height: 40px;
+    border: 1px solid black;
+}
+#save-change-btn{
+    background-color: seagreen;
+    color:white;
+}
+#go-back-btn{
+    background-color: orange;
+    color: white;
+}
+.update-btn{
+    height: 40px;
+    font-weight: bold;
+    width: 140px;
+}
+.update-btn:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: scale(1.5,1.5);
+}
+footer{
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+}
+footer a{
+    text-decoration: none;
+}
+.table{
+    text-align: center;
+    width: 70%;
+    margin-bottom: 120px;
+}
+.product_photos{
+    width: 100px;
+    height: 48px;
+}
+#create-category-btn{
+    background-color: green;
+    color: white;
+    margin-left: 70vw;
+    margin-top: 20px;
+    height: 40px;
+    font-weight: bold;
+}
+#create-category-btn:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: scale(2,2);
+}
+.edit-btn{
+    background-color: blue;
+    color: white;
+}
+.delete-btn{
+    background-color: red;
+    color: white;
+}
+.table{
+    width: 900px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.grid-container{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h3{
+    margin-left: 30px;
+}
+li:hover{
+    color: white;
+}
+        .fa {
+padding: 5px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 3px 2px;
+border-radius: 20%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white; 
+margin-left: 232px;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.fa-pinterest {
+background: #cb2027;
+color: white;
+}
+
+.fa-snapchat-ghost {
+background: #fffc00;
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+background: #00aff0;
+color: white;
+}
+
+
+
