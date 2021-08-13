@@ -10,6 +10,7 @@ if (isset($_POST['submit'])){
     move_uploaded_file($_FILES["p_image"]["tmp_name"],$target);
     $sql="insert into product_details(product_id,product_name,product_image,product_price,product_category) values('','".$product_name."','".$target_db."','".$product_price."','".$product_category."')";
 if ($conn->query($sql)===TRUE){
+    echo '<script>validateform();</script>';
     header("Location:list_products.php");
     exit();
 }
@@ -47,7 +48,7 @@ else{
         </nav>
     </header>
     <br>
-    <form method="post" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data" onsubmit=<?php echo '<script>validateform();</script>'; ?> novalidate>
+    <form method="post" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data" onsubmit="return validateform()" novalidate>
         <div class="container">
             <h1>Add Product</h1>
             <div class="input-group">
