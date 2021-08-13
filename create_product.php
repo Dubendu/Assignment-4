@@ -47,21 +47,21 @@ else{
         </nav>
     </header>
     <br>
-    <form method="post" onsubmit="return validateForm()" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data" >
+    <form method="post" id="regForm" onsubmit="return validateForm()" class="create_product_form" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data" >
         <div class="container">
             <h1>Add Product</h1>
             <div class="input-group">
                 <label for="product_name">Product Name</label>
-                <input class="form-input" type="text" name="p_name" placeholder="" id="product_name" onblur="validate2()">
+                <input class="form-input" type="text" name="p_name" placeholder="" id="product_name" >
                 <span id="errorPname"></span>
                 <label for="product_price">Product Price</label>
-                <input class="form-input" type="text" name="p_price" placeholder="" id="product_price" onblur="validate3()">
+                <input class="form-input" type="text" name="p_price" placeholder="" id="product_price" >
                 <span id="errorPrice"></span>
                 <label for="upload_image">Upload Image</label>
-                <input class="form-input" type="file" name="p_image" placeholder="" id="upload_image" onblur="validate4()">
+                <input class="form-input" type="file" name="p_image" placeholder="" id="upload_image">
                 <span id="errorImage"></span>
                 <label for="select_category">Select Category</label>
-                <select name="category" id="select_category" class="form-input" onblur="validate4()">
+                <select name="category" id="select_category" class="form-input">
                     <option value="Mobile">Mobile</option>
                     <option value="Automobile">Automobile</option>
                     <option value="Books">Books</option>
@@ -128,6 +128,7 @@ else{
             <a href="#">singhdubendu222@gmail.com</a>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="product_validation.js"></script>
 </body>
 
