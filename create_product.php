@@ -1,6 +1,6 @@
 <?php include('config.php')?>
 <?php
-if (isset($_POST['submit'])){
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $product_name=$_POST['p_name'];
     $product_price=$_POST['p_price'];
     $product_category=$_POST['category'];
