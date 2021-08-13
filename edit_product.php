@@ -75,11 +75,13 @@ else{
             <div class="input-group">
             <label for="product_name">Product Name</label>
                 <input class="form-input" type="text" name="p_name"  id="product_name">
-                <span id="error"></span>
+                <span id="errorPname"></span>
                 <label for="product_price">Product Price</label>
                 <input class="form-input" type="text" name="p_price" id="product_price">
+                <span id="errorPrice"></span>
                 <label for="upload_image">Upload Image</label>
                 <input class="form-input" type="file" name="p_image" placeholder="" id="upload_image">
+                <span id="errorImage"></span>
                 <label for="select_category">Select Category</label>
                 <select name="category" id="select_category" class="form-input">
                     <option value="Mobile">Mobile</option>
@@ -87,7 +89,8 @@ else{
                     <option value="Book">Books</option>
                     <option value="Sports">Sports</option>
                     <option value="Earphones">Earphones</option>
-                </select>   
+                </select> 
+                <span id="errorCategory"></span>  
                <div>               
                    <button type="submit" name="submit" id="save-change-btn" class="update-btn">Save Changes</button>
                     <button type="submit" formaction="create_product.php" id="go-back-btn" class="update-btn">Go Back</button>
