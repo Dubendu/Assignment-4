@@ -15,7 +15,7 @@ $(function(){
     errNode4=$("#errorImage");
     productCategory=$("#select_category");
     errNode5=$("#errorCategory");
-    formNode=$('#regForm');
+    formNode=$('#regForm')
     productNode.blur(function(){
         validate2();
     });
