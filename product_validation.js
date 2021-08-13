@@ -32,7 +32,7 @@ $(function(){
 });
 
 function validate2(){
-    errNode2.innerHTML(" ");
+    errNode2.html(" ");
     productNode.css({border:'2px solid green',backgroundColor:'yellow'});
     let pname=productNode.val();
     let regexpress_pname=new RegExp("[a-zA-Z0-9]+");
@@ -54,7 +54,7 @@ function validate2(){
 function validate3(){
     errNode3.html("");
     productPrice.css({border:'2px solid green',backgroundColor:'yellow'});
-    let price=productPrice.value;
+    let price=productPrice.val();
     let regexpress_price=new RegExp("[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)");
     if (price===""){
         errNode3.html("<b>this field is required.<b>");
@@ -72,7 +72,7 @@ function validate3(){
 
 
 function validate4(){
-    let image=productImage.value;
+    let image=productImage.val();
     let regexpress_image=new RegExp("([^\\s]+(\\.(?i)(jpe?g|png|jfif))$)");
     if(!regexpress_price.test(image)){
         errNode4.html("<b>Image should be in jpg,jpeg,png,jfif format only.</b>");
@@ -88,7 +88,7 @@ function validate4(){
 function validate5(){
     errNode5.html("");
     productCategory.css({border:'2px solid green',backgroundColor:'yellow'});
-    let category=productCategory.value;
+    let category=productCategory.val();
     if (category===""){
         errNode5.html("<b>this field is required.<b>");
         productCategory.css({border:'2px solid red',backgroundColor:'pink'});
