@@ -6,6 +6,7 @@ let productImage;
 let errNode4;
 let productCategory;
 let errNode5;
+let formNode
 $(function(){
     productNode=$("#product_name");
     errNode2=$("#errorPname");
@@ -15,7 +16,7 @@ $(function(){
     errNode4=$("#errorImage");
     productCategory=$("#select_category");
     errNode5=$("#errorCategory");
-    formNode=$('#regForm')
+    formNode=$('#regForm');
     productNode.blur(function(){
         validate2();
     });
