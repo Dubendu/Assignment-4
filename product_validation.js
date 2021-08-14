@@ -10,8 +10,6 @@ $(function(){
     errNode2=$("#errorPname");
     productPrice=$("#product_price");
     errNode3=$("#errorPrice");
-    productImage=$("#upload_image");
-    errNode4=$("#errorImage");
     productCategory=$("#select_category");
     errNode5=$("#errorCategory");
     formNode=$('#regForm');
