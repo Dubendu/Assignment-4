@@ -49,7 +49,7 @@ function validate3(){
     errNode3.html("");
     productPrice.css({border:'2px solid green',backgroundColor:'yellow'});
     let price=productPrice.val();
-    let regexpress_price=new RegExp("^[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)$");
+    let regexpress_price=new RegExp("^[+]?([0-9]+\.?[0-9]*|\.[0-9]+)$");
     if (price===""){
         errNode3.html("<b>this field is required.<b>");
         productPrice.css({border:'2px solid red',backgroundColor:'pink'});
