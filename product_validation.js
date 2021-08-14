@@ -65,10 +65,6 @@ function validate3(){
     else
         return true;
 }
-
-
-
-
 function validate5(){
     errNode5.html("");
     productCategory.css({border:'2px solid green',backgroundColor:'yellow'});
