@@ -29,7 +29,7 @@ function validate2(){
     errNode2.html(" ");
     productNode.css({border:'2px solid green',backgroundColor:'yellow'});
     let pname=productNode.val();
-    let regexpress_pname=new RegExp("/[^a-z\d]/i");
+    let regexpress_pname=new RegExp("/^[a-z0-9]+$/i");
     if (pname===""){
         errNode2.html("<b>this field is required.<b>");
         productNode.css({border:'2px solid red',backgroundColor:'pink'});
