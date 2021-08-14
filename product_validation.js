@@ -2,8 +2,6 @@ let productNode;
 let errNode2;
 let productPrice;
 let errNode3;
-let productImage;
-let errNode4;
 let productCategory;
 let errNode5;
 let formNode;
@@ -22,9 +20,6 @@ $(function(){
     });
     productPrice.blur(function(){
         validate3();
-    });
-    productImage.blur(function(){
-        validate4();
     });
     productCategory.blur(function(){
         validate5();
@@ -72,18 +67,6 @@ function validate3(){
 }
 
 
-function validate4(){
-    let image=productImage.val();
-    let regexpress_image=new RegExp("([^\\s]+(\\.(?i)(jpg|png|jfif|jpeg))$");
-    if(!regexpress_price.test(image)){
-        errNode4.html("<b>Image should be in jpg,jpeg,png,jfif format only.</b>");
-        productImage.css({border:'2px solid red',backgroundColor:'pink'});
-        return false;
-    }
-    else
-        return true;
-}
-
 
 
 function validate5(){
@@ -102,7 +85,6 @@ function validate5(){
 function validateForm(){
     let st2=validate2();
     let st3=validate3();
-    let st4=validate4();
     let st5=validate5();
-    return(st2 && st3 && st4 && st5);
+    return(st2 && st3 && st5);
 }
